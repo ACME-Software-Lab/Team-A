@@ -1,0 +1,115 @@
+* {margin: 0; padding: 0; box-sizing: border-box; /* border: 1px solid white; */}
+/* Style the header */
+.header {
+    width: 100%;
+    padding: 10px 0;
+    backdrop-filter: blur(20px);
+    background-color: rgba(0, 0, 255, 0.096);
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+header {
+    width: 90%;
+    margin: 0 auto;
+    color: black;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.logo {
+    width: 30%;
+}
+
+.nav {
+    padding: 5px;
+}
+.nav ul li {
+    display: inline;
+    list-style: none;
+    font-size: 20px;
+    margin-right: 10px;
+}
+.nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+.nav ul li:last-child {
+    margin-right: none;
+}
+.header_icons {
+    width: 30%;
+}
+
+/* Style the main */
+#text {
+    text-align: center;
+    margin: 70px 0 30px 0px;
+    font-size: larger;
+    font-weight: bolder;
+}
+#account_information {
+    background-color: #fff;
+    width: 60%;
+    height: 500px; /* Will change this later*/
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 4px rgba(128, 128, 128, 0.233);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#info_tab {
+    width: 30%;
+    height: 100%;
+    background-color: rgba(59, 59, 59, 0.103);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+#info_details {
+    width: 70%;
+    height: 100%;
+    border: none;
+    padding: 10px;
+}
+
+/* User Information */
+#profile_info {
+    /* height: 25%; */
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 15px;
+    text-transform: capitalize; /* Change user's username to capitalize each word */
+}
+#profile_img {
+    width: 100px;
+    height: 100px;
+    background-color: grey;
+    margin: 20px auto 10px;
+    border-radius: 50%;
+}
+
+#profile_info_settings {
+    width: 100%;
+    color: rgba(128, 128, 128, 0.795);
+}
+#profile_info_settings h4 {
+    margin: 30px 0;
+}
+
+#profile_info_settings h4:first-child {
+    color: black;
+    border-bottom: 1px solid black;
+}
+#profile_info_settings h4:last-child {
+    margin-bottom: none;
+}
