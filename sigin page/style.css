@@ -1,5 +1,6 @@
 body {
     font-family: Arial, sans-serif;
+    
   }
   
   .container, .container-1 {
@@ -31,6 +32,9 @@ a {
   input {
       border: 0px;
   }
+  input:focus {
+    outline: none;
+  }
   
   .input-group {
     position: relative;
@@ -51,10 +55,16 @@ a {
     font-size: 1.2em;
     color: #bbb;
   }
+  .background-image, img {
+    max-width: 30rem;
+    height: 100%;
+    float: left;
+    width: 100%;
+  }
   
   .remember, .agreement {
     display: flex;
-    justify-content: first baseline;
+    justify-content: flex-start;
     align-items: center;
     margin-bottom: 15px;
   }
@@ -88,4 +98,29 @@ a {
 }
 .show {
     display: block;
+}
+
+/* media query for mobile */
+@media(min-width:30rem)  {
+  body {
+    display: flex;
+    justify-content: center;
+  }
+  
+}
+
+/* media query for desktop */
+@media(min-width:1440px)  {
+  body {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .background-image, img {
+    max-width: 100%;
+    align-self: center;
+    max-height: 10%;
+  }
+  
 }
