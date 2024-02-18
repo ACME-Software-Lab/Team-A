@@ -8,6 +8,7 @@
 body{
     background-color: #fff;
     padding: 0;
+    overflow-x: visible;
  }
 
 
@@ -20,6 +21,9 @@ body{
     text-align: center;
     width: 100%;
     height: 50px; 
+    position: fixed;
+    top: 0;
+    z-index: 1;
     background-color: #f2f2f2; 
   }
   
@@ -50,6 +54,7 @@ body{
             background-color: #fff;
             color: #000;
             height: 60px;
+            padding-top: 40px;
         }
 
         .navbar .logo{
@@ -188,16 +193,16 @@ body{
 	/*------------------------ Start Slide-Show CSS   -----------------------*/
 		.mySlides {
 		  position: relative; 
+		  top: 50px;
 		}
 		  
 		.mySlides img{
 		  position: relative;
-		  vertical-align: middle; 
+		  vertical-align:auto;
 		  width: 100%;
 		  height: 80vh;
 		  overflow: hidden;
-		  margin-right: 200px;
-		  border-radius: 50px;
+		  border-radius: 10px;
 		}
 	  
 	  /* Slideshow container */
@@ -368,11 +373,14 @@ body{
 	/* ---------------product image slider------------- */
 	main{
 		width: 100%;
-		height: 840px;
+		height: 100%;
 		/*background: red;*/
 		margin: 10px auto;
 		position: relative;
 		padding: 5px 0;
+		padding-bottom: 0;
+		margin-bottom: 50px;
+		overflow-x: scroll;
 	}
 	main .text{
 		padding: 10px;
@@ -397,6 +405,7 @@ body{
 		display: flex;
 		align-items: center;
 		padding: 20px;
+		
 		justify-content: space-between;
 		border-bottom: 2px solid #ddd;
 	}
@@ -417,17 +426,18 @@ body{
     		color: white;
 	}
 	
-	.sec{
+	.sec {
 		width: 98%;
 		height: 600px;
 		/*background: red;*/
 		margin: auto;
 		display: flex;
 		align-items: center;
-		overflow-x: auto;
+		overflow-x: visible;
 	}
 	.sec::-webkit-scrollbar{
 			display: none;
+		
 	}
 	
 	.sec .product{
@@ -444,11 +454,11 @@ body{
 	picture{
 		width: 100%;
 		height: 70%;
-		padding: 20px;
+		padding: 0px;
 		/*background: green;*/
 		display: flex;
 		overflow: hidden;
-		margin-bottom: 20px;
+		margin-bottom: 30px;
 	}
 	picture img{
 		width: 100%;
@@ -485,8 +495,199 @@ body{
 		font-size: 25px;
 		color: #808080;
 	}
+	.more-product, .shop-now, .read-more {
+		display: flex;
+		justify-content: end;
+		text-transform: capitalize;
+	}
+	.more-product a, .blog-post a, .read-more a, .shop-now a {
+		text-decoration: none;
+		border-bottom: 3px solid black;
+		color: #000;
+		font-size: 25px;
+		padding-top: 10px;
+
 	
-	@media (max-width: 768px) {
+	}
+	.shop-now {
+		justify-content: flex-start;
+	}
+	.guarantee {
+		margin: 0 1.8rem 0 0;
+		display: grid;
+		grid-template-columns: auto auto;
+		width: 100%;
+		height: 100%;
+		padding: 1rem;
+		
+	}
+	
+	.guarantee  div {
+		width: 100%;
+		padding: 6%;
+		border: 3px solid white;
+		background-color: aliceblue;
+		height: 180px;
+		margin: .1rem 0 .5rem .1rem .1rem;
+	
+	}
+	.guarantee div > h3 {
+		text-align: start;
+		word-break: break-all;
+		line-height: 1.8rem;
+		padding-top: 1%;
+		
+	}
+	.offer {
+		float: left;
+		width: 100%;
+		background-color: aliceblue;
+		padding: 0rem;
+		margin-top: 5rem;
+		line-height: 3rem;
+		margin-bottom: 50px;
+	}
+	.offer img, .blog-post img {
+		
+		padding: 15rem;
+		margin: 0;
+		background-image: url("../images/how-to-buy-a-budget-laptop-2022.jpg");
+		width: 100%;
+		height: 100%;
+		padding-left: 90%;
+		padding-right: 10%;
+	}
+	.blog-post img:first-child {
+		background-image: url(../images/product6.jpeg);
+	}
+	#post-3 {
+		background-image: url(../images/feature_3.png);
+	}
+	#post-2 {
+		background-image: url(../images/product1.png);
+	}
+	.offer  p, .shop-now, .offer h3, .offer h1 {
+		margin: 1.3rem;
+		padding-left: 1rem;
+	}
+	.offer h3 {
+		color: #6773ff;
+		margin-top: 1.5%;
+	}
+	article {
+		margin: 3rem;
+		margin-top: 30%;
+	}
+	.blog-post {
+		margin-top: 3%;
+		margin-bottom: 3%;
+	}
+	.blog-title div h2 {
+		font-size: 45px;
+		text-transform: capitalize;
+	}
+	.blog-post p {
+		font-weight: bolder;
+		font-size: larger;
+		margin-top: 1.5%;
+		margin-bottom: 1.5%;
+	}
+	.last-section {
+		background-color: #e7edf0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+		height: 20rem;
+		
+		
+	}
+	.last-section > h3 {
+		
+		margin-top: 6%;
+		font-weight: bolder;
+		font-size: 30px;
+		text-transform: capitalize;
+	}
+	.last-section p {
+		margin-top: .5%;
+		margin-bottom: 1.5%;
+		
+	}
+	.last-section div {
+		border-bottom: 1px solid black;
+		width: 23%;
+		display: flex;
+		flex-direction: row;
+	}
+	.last-section div input {
+		border: 0px;
+		outline: none;
+		color: #000;
+		background-color: #e7edf0;
+		padding-top: 1%;
+	}
+	.last-section div button {
+		border: 0;
+		outline: none;
+		color: #5a5a5a;
+		background-color: #e7edf0;
+		line-height: 3rem;
+		align-items: flex-end;
+		padding-left: 30%;
+	}
+	footer {
+		background-color: #000;
+		color: white;
+		padding: 5%;
+		padding-bottom: 5%;
+	}
+	footer .footer-icon {
+		display: flex;
+		justify-content: space-around;
+	}
+	.footer-logo {
+		float: left;
+		width: 100%;
+	}
+	.footer-nav  {
+		display: flex;
+		flex-direction: row;
+		justify-content:space-evenly;
+		width: 30%;
+		list-style: none;
+		
+		
+	}
+	.footer-nav a{
+		text-decoration: none;
+		color: white;
+	
+	}
+	.copyright {
+		margin-top: 2%;
+		border-top: 1px solid azure;
+	}
+	.copyright p {
+		padding-top: 1%;
+		float: left;
+		width: 28%;
+	}
+	.social-icon  {
+		float: right;
+		padding-top: 1%;
+	}
+	.copyright .pt {
+		font-weight: bolder;
+		font-size: 15px;
+	}
+	.p p:nth-child(2) {
+		
+		max-width: 10%;
+	}
+	
+	
+	@media all and (max-width: 768px) {
 		.text h1{
 			font-size: 35px;
 		}
@@ -501,12 +702,33 @@ body{
 		}
 		.sec .product {
 			min-width: 49%;
-			margin:  0 10px  0 0;
+			margin:  0 1px 0 0;
 		}
 		.detail, .button{
 			font-size: 16px;
 		}
 		.product a{
 			padding: 6px 10px;
+		}
+		.grid-container {
+			display: flex;
+			flex-direction: column;
+			align-content: center;
+			
+		}
+		.pic  {
+			min-width: 120%;
+			height: 100%;
+			
+			border-radius: 0;
+			
+		
+		}
+		
+		.sec .product {
+			
+			height: 100%;
+			min-width: 100%;
+			
 		}
 	}
