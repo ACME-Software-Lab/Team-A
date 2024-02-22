@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Page</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="logo">
+        <img src="logo.png" alt="AcmeMart Logo" />
+      </div>
+      <nav class="menu">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </nav>
+
+      <div class="search">
+        <input type="text" placeholder="Search..." />
+        <button>Search</button>
+      </div>
+    </header>
+
+    <!-- Container for product cards -->
+    <div class="container" id="product-container">
+      <!--  Product Cards -->
+      <div class="product-card">
+        <div class="product-img">
+          <img src="./img/mart.png" alt="Product Image" />
+        </div>
+        <div class="product-info">
+          <h2 class="product-title">Product 1</h2>
+          <p class="product-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+          <p class="product-price">$19.99</p>
+          <div class="product-actions">
+            <button onclick="viewProduct(this)">View</button>
+            <button onclick="deleteProduct(this)">Delete</button>
+          </div>
+        </div>
+      </div>
+      <!-- Repeat the product card structure for other products -->
+    </div>
+
+    <!-- Add Product Button -->
+    <button class="add-product-btn" onclick="addProduct()">Add Product</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
