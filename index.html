@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <!-- Header -->
     <header class="header">
       <div class="logo">
         <h1>Acme.Mart</h1>
@@ -21,7 +20,6 @@
       </nav>
     </header>
 
-    <!-- Product Type Tabs -->
     <div class="product-types">
       <button onclick="filterProducts('All')">All</button>
       <button onclick="filterProducts('Furniture')">Furniture</button>
@@ -31,15 +29,11 @@
       <button onclick="filterProducts('Phones')">Phones</button>
       <button onclick="filterProducts('Laptops')">Laptops</button>
       <button onclick="filterProducts('Textbooks')">Textbooks</button>
-      <!-- Add more buttons for other product types if needed -->
     </div>
 
     <!-- Container for product cards -->
-    <div class="container" id="product-container">
-      <!-- Product cards will be dynamically generated here -->
-    </div>
+    <div class="container" id="product-container"></div>
 
-    <!-- Add Product Button -->
     <button id="add-product-btn">Add Product</button>
 
     <script src="script.js"></script>

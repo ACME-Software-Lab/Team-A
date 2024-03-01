@@ -1,4 +1,3 @@
-// Data for each product category
 const products = {
   Furniture: [
     {
@@ -12,7 +11,6 @@ const products = {
         "img/furniture3.jpeg",
       ],
     },
-    // Add more furniture products here
   ],
   Shoes: [
     {
@@ -22,7 +20,6 @@ const products = {
       price: "$79.99",
       images: ["img/shoe.jpeg", "img/femaleShoe.jpeg", "img/male shoe.jpeg"],
     },
-    // Add more shoe products here
   ],
   Electronics: [
     {
@@ -31,7 +28,6 @@ const products = {
       price: "$699.99",
       images: ["img/phone1.jpeg", "img/phone2.jpeg", "img/phone3.jpeg"],
     },
-    // Add more electronics products here
   ],
   Bags: [
     {
@@ -40,9 +36,8 @@ const products = {
       price: "$59.99",
       images: ["img/bag1.jpeg", "img/bag2.jpeg", "img/bag3.jpeg"],
     },
-    // Add more bag products here
   ],
-  // Add more categories as needed
+  // Add more categories
 };
 
 // Function to generate product cards
@@ -59,7 +54,7 @@ function generateProductCards(category) {
     }
   } else {
     // Otherwise, get products of the selected category
-    filteredProducts = products[category] || []; // Ensure filteredProducts is an array
+    filteredProducts = products[category] || [];
   }
 
   // Check if filteredProducts is an array before iterating over it
@@ -78,7 +73,7 @@ function generateProductCards(category) {
 
 // Function to generate a single product card
 function generateProductCard(container, product, image) {
-  // Create elements for the product card
+  //  elements for the product card
   const card = document.createElement("div");
   card.classList.add("product-card");
 
